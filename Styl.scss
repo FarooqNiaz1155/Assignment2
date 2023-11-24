@@ -1,0 +1,111 @@
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+// Variable Declarations
+$small-font-size: 0.875rem;
+$h2-font-size: 1.5rem;
+$title-color: #333; // Change to the desired color
+
+// General Styles
+body {
+    font-family: 'Arial', 'Helvetica', sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: transparent;
+    cursor: pointer;
+
+    a {
+        float: left;
+        font-size: 16px;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    // Other Navbar Styles
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+
+    .dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+    
+    // Other Dropdown Styles
+}
+
+.container {
+    display: grid;
+    place-items: center;
+    margin-inline: 1.5rem;
+    padding-block: 5rem;
+}
+
+.card__container {
+    display: grid;
+    row-gap: 3.5rem;
+}
+
+.card__article {
+    position: relative;
+    overflow: hidden;
+}
+
+.card__img {
+    width: 328px;
+    border-radius: 1.5rem;
+}
+
+.card__data {
+    width: 280px;
+    background-color: white;
+    opacity: 0.9;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 8px 24px hsla(0, 8%, 97%, 0.15);
+    border-radius: 1rem;
+    position: absolute;
+    bottom: -9rem;
+    left: 0;
+    right: 0;
+    margin-inline: auto;
+    opacity: 0;
+    transition: opacity 1s 1s;
+    
+    .card__description {
+        display: block;
+        font-size: $small-font-size;
+        margin-bottom: 0.25rem;
+    }
+
+    .card__title {
+        font-size: $h2-font-size;
+        font-weight: 500;
+        color: $title-color;
+        margin-bottom: 0.75rem;
+    }
+
+    .card__button {
+        text-decoration: none;
+        font-size: $small-font-size;
+        font-weight: 500;
+        color: var(--first-color);
+    }
+
+    .card__button:hover {
+        text-decoration: underline;
+    }
+}
+
+
